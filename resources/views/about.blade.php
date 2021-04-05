@@ -70,7 +70,7 @@
           </article>
         </li>
       </ul>
-      <footer class="center"><a class="btn" href="{{('/product')}}">Lihat Produk</a></footer>
+      <footer class="center"><a class="btn" href="{{url('/product')}}">Lihat Produk</a></footer>
       <!-- ################################################################################################ -->
       <!-- / main body -->
       <div class="clear"></div>
@@ -101,7 +101,7 @@
           </figure>
         </li>
       </ul>
-      <footer class="center"><a class="btn" href="{{('/product')}}">Lihat Produk</a></footer>
+      <footer class="center"><a class="btn" href="{{url('/product')}}">Lihat Produk</a></footer>
       <!-- ################################################################################################ -->
     </section>
   </div>

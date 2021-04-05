@@ -15,12 +15,19 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <link href="{{asset('assets/layout/styles/layout.css')}}" rel="stylesheet" type="text/css" media="all">
+<style>
+    th{
+        text-align: center;
+    }
+</style>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
 <div class="wrapper row0">
   <div id="topbar" class="hoc clear">
     <div class="fl_left"> 
@@ -61,17 +68,17 @@ Licence URI: https://www.os-templates.com/template-terms
   <header id="header" class="hoc clear">
     <div id="logo" class="fl_left"> 
       <!-- ################################################################################################ -->
-      <h1><a href="{{'/'}}">HondaMobil</a></h1>
+      <h1><a href="{{url('/')}}">HondaMobil</a></h1>
       <!-- ################################################################################################ -->
     </div>
     <nav id="mainav" class="fl_right"> 
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li class="{{Request()->is('/')?'active':''}}"><a href="{{'/'}}">Home</a></li>
-        <li class="{{Request()->is('product')?'active':''}}"><a href="{{'/product'}}">Produk</a></li>
-        <li class="{{Request()->is('about')?'active':''}}"><a href="{{'/about'}}">Tentang Kami</a></li>
-        <li class="{{Request()->is('prices')?'active':''}}"><a href="{{'/prices'}}">Harga Honda</a></li>
-        <li class="{{Request()->is('contact')?'active':''}}"><a href="{{'/contact'}}">Hubungi Kami</a></li>
+        <li class="{{Request()->is('/')?'active':''}}"><a href="{{url('/')}}">Home</a></li>
+        <li class="{{Request()->is('product')?'active':''}}"><a href="{{url('/product')}}">Produk</a></li>
+        <li class="{{Request()->is('about')?'active':''}}"><a href="{{url('/about')}}">Tentang Kami</a></li>
+        <li class="{{Request()->is('prices')?'active':''}}"><a href="{{url('/prices')}}">Harga Honda</a></li>
+        <li class="{{Request()->is('contact')?'active':''}}"><a href="{{url('/contact')}}">Hubungi Kami</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </nav>
@@ -157,6 +164,7 @@ Licence URI: https://www.os-templates.com/template-terms
   <script src="{{asset('layout/scripts/jquery.min.js')}}"></script>
   <script src="{{asset('layout/scripts/jquery.backtotop.js')}}"></script>
   <script src="{{asset('layout/scripts/jquery.mobilemenu.js')}}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
   </body>
   </html>

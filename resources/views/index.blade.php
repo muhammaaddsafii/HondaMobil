@@ -13,8 +13,8 @@
         <p>Seperti yang telah di ketahui sebagai dealer mobil honda yang memasarkan produk di wilayah daerah istimewa yogyakarata, selain itu sebagi informasi konsumen untuk mengetahui segala macam produk, promo, paket kredit, angsuran, cashback serta perhitungan kredit bagi calon pembeli mobil honda</p>
         <footer>
           <ul class="nospace inline pushright">
-            <li><a class="btn" href="#">Hubungi Kami</a></li>
-            <li><a class="btn inverse" href="#">Explore</a></li>
+            <li><a class="btn" href="{{url('/contact')}}">Hubungi Kami</a></li>
+            <li><a class="btn inverse" href="{{url('/product')}}">Explore</a></li>
           </ul>
         </footer>
       </article>
@@ -64,7 +64,7 @@
                 </li>
               </ul>
               <p>Ac nibh blandit eleifend nullam sed nisi in justo hendrerit egestas proin consectetuer turpis quis malesuada [<a href="#">&hellip;</a>]</p>
-              <footer><a class="btn" href="{{'/product'}}">Read More</a></footer>
+              <footer><a class="btn" href="{{url('/product')}}">Read More</a></footer>
             </div>
           </article>
         </li>
@@ -80,7 +80,7 @@
                 </li>
               </ul>
               <p>Felis et libero aliquam ultrices aliquam quis purus feugiat tortor sodales vestibulum nunc sollicitudin tellus [<a href="#">&hellip;</a>]</p>
-              <footer><a class="btn" href="{{'/product'}}">Read More</a></footer>
+              <footer><a class="btn" href="{{url('/product')}}">Read More</a></footer>
             </div>
           </article>
         </li>
@@ -96,7 +96,7 @@
                 </li>
               </ul>
               <p>A blandit augue lorem ac est pellentesque et risus sed quis magna vestibulum erat nisl luctus iaculis consequat [<a href="#">&hellip;</a>]</p>
-              <footer><a class="btn" href="{{'/product'}}">Read More</a></footer>
+              <footer><a class="btn" href="{{url('/product')}}">Read More</a></footer>
             </div>
           </article>
         </li>
