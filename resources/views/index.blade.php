@@ -5,18 +5,32 @@
 @endsection
 
 @section('container')
-<div class="wrapper bgded overlay" style="background-image:url('{{asset('assets/images/demo/backgrounds/header1.jpg')}}');">
-    <div id="pageintro" class="hoc clear"> 
+<div class="wrapper bgded overlay">
+    <div id="" class=""> 
       <!-- ################################################################################################ -->
       <article>
-        <h4 class="heading">Welcome to HondaMobil</h4>
-        <p>Seperti yang telah di ketahui sebagai dealer mobil honda yang memasarkan produk di wilayah daerah istimewa yogyakarata, selain itu sebagi informasi konsumen untuk mengetahui segala macam produk, promo, paket kredit, angsuran, cashback serta perhitungan kredit bagi calon pembeli mobil honda</p>
-        <footer>
-          <ul class="nospace inline pushright">
-            <li><a class="btn" href="{{url('/contact')}}">Hubungi Kami</a></li>
-            <li><a class="btn inverse" href="{{url('/product')}}">Explore</a></li>
-          </ul>
-        </footer>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{asset('assets/images/demo/backgrounds/header1.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{asset('assets/images/demo/backgrounds/car.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{asset('assets/images/demo/backgrounds/car1.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
       </article>
       <!-- ################################################################################################ -->
     </div>

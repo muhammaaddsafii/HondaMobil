@@ -21,6 +21,14 @@ Licence URI: https://www.os-templates.com/template-terms
     th{
         text-align: center;
     }
+    div.ini-fixed{
+      position: fixed;
+      width: 500%;
+      bottom: 30px;
+      left: 30px;
+      z-index: 1000;
+} 
+    }
 </style>
 </head>
 <body id="top">
@@ -33,7 +41,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="fl_left"> 
       <!-- ################################################################################################ -->
       <ul class="nospace">
-        <li><i class="fab fa-whatsapp"></i> 081254346789</li>
+        <li><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=6281939123456" style="color: #474747"> 081254346789</a></li>
         <li><i class="fas fa-map-marker-alt"></i> Perum. LempongSari Blok B-1</li>
       </ul>
       <!-- ################################################################################################ -->
@@ -88,6 +96,9 @@ Licence URI: https://www.os-templates.com/template-terms
 
 @yield('container')
 
+<div class="ini-fixed">
+  <a class="faicon-phone" href="https://api.whatsapp.com/send?phone=6281939123456"><i class="fas fa-phone fa-2x"> Contact</i></a>
+</div>
 
 <div class="wrapper row4">
     <footer id="footer" class="hoc clear"> 
@@ -160,10 +171,11 @@ Licence URI: https://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
   <!-- JAVASCRIPTS -->
-  <script src="{{asset('layout/scripts/jquery.min.js')}}"></script>
-  <script src="{{asset('layout/scripts/jquery.backtotop.js')}}"></script>
-  <script src="{{asset('layout/scripts/jquery.mobilemenu.js')}}"></script>
+  <script src="{{asset('assets/layout/scripts/jquery.min.js')}}"></script>
+  <script src="{{asset('assets/layout/scripts/jquery.backtotop.js')}}"></script>
+  <script src="{{asset('assets/layout/scripts/jquery.mobilemenu.js')}}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
   </body>
